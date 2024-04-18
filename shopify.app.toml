@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "d00c2de4da6cb929ae59decd0a418bc6"
+name = "pragmatic-logistics-app"
+handle = "pragmatic-logistics-app-3"
+application_url = "https://reduce-instructor-don-founded.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "easytrustdev.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://reduce-instructor-don-founded.trycloudflare.com/auth/callback",
+  "https://reduce-instructor-don-founded.trycloudflare.com/auth/shopify/callback",
+  "https://reduce-instructor-don-founded.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
